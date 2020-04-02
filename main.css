@@ -85,11 +85,11 @@ div {
 
 .wave {
   position: absolute;
-  top: calc(50% + 87px);
+  top: calc(100% - 190px);
   left: calc(50% - 60px);
   width: 120px;
   height: 12px;
-  background: #fff;
+  background: #f00;
   border-radius: 100%;
 }
 .wave:not(:first-child) {
@@ -148,12 +148,13 @@ div {
 }
 .sea {
   position: absolute;
-  top: calc(50% + 80px);
+  top: calc(100% - 200px);
   left: 0;
   width: 100%;
-  height: calc(50% - 70px);
+  height: 200px;
   background: rgba(0, 0, 255, 0.5);
-  background: radial-gradient(ellipse at top, white 0%, rgba(255, 215, 0, 0.1) 10%, chocolate 100%);
+  /* background: radial-gradient(ellipse at top, #ffa700 0%, rgba(255, 108, 0, 0.31) 10%, #451ed2 100%); */
+  background: radial-gradient(ellipse at top, #ffcb00 0%, rgba(237,	137, 10, 0.9) 5%, #01344d 100%);
 }
 
 .sky {
@@ -163,14 +164,15 @@ div {
   width: 100%;
   height: calc(100% - 200px);
   background: rgba(0, 0, 255, 0.5);
-  background: radial-gradient(ellipse at bottom, yellow 0%, khaki 15%, orange 100%);
+  /* background: radial-gradient(ellipse at bottom, #ffcb00 0%, #ed890a 15%, #01344d 100%); */
+  background: radial-gradient(ellipse at bottom, #ffa700 0%, rgba(255, 108, 0, 0.31) 5%, #19407c 100%);
 }
 
 .horizon {
   position: absolute;
-  top: 50%;
+  top: 0;
   width: 100%;
-  height: calc(50% - 200px);
+  height: calc(100% - 200px);
   border-radius: 100%;
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
   -webkit-filter: blur(10px);
